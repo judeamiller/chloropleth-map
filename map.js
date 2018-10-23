@@ -87,6 +87,8 @@ info.update = function (props) {
         : 'Hover over a state');
 };
 
+
+
 info.addTo(map);
 
 var legend = L.control({position: 'bottomright'});
