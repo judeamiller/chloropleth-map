@@ -65,6 +65,13 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
         click: zoomToFeature
     });
+
+    // adds state names to map in a perm popup
+    // layer.bindTooltip(layer.feature.properties.name, {
+    //     direction: "center",
+    //     permanent: true,
+    //     opacity: .5,
+    //     className: 'labelstyle'});
 }
 
 geojson = L.geoJson(statesData, {
@@ -110,3 +117,7 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
+
+
+        
